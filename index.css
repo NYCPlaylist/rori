@@ -1,0 +1,44 @@
+body{
+    background-image: url('/assets/roribg.jpg');
+    background-color: aliceblue;
+    background-repeat:repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    user-select: none;
+}
+
+@font-face {
+    font-family: TangerineBold;
+    src: url('/assets/Tangerine/Tangerine-Bold.ttf');
+}
+@font-face {
+    font-family: TangerineRegular;
+    src: url('/assets/Tangerine/Tangerine-Regular.ttf');
+}
+h1 {
+    font-family: TangerineBold;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 0.4;
+    font-weight: 600;
+}
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+.haiku{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    color: aliceblue;
+}
