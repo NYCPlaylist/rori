@@ -48,10 +48,13 @@ body{
 .postcard_about, .postcard_mail{
     padding: 2em 
 }
-.postcard_about p{
+.postcard_about p, h2{
     font-family: TangerineBold;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
+}
+.postcard_about h2 {
+    font-size: 2.2em;
 }
 .postcard_mail{
     user-select: all;
@@ -67,8 +70,21 @@ body{
     .vl{
         display: none;
     }
+    .postcard_about, .postcard_mail{
+        padding: 0em 
+    }
     .postcard_contents{
         flex-direction: column;
+        margin-top: 4em;
+    }
+    .postcard_about h2 {
+        font-size: 1.6em;
+    }
+    .postcard_about p{
+        font-size: 1.2em;
+    }
+    .postcard_mail{
+        font-size: 0.8em;
     }
     body{
         background-position: right;

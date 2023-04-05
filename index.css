@@ -29,7 +29,7 @@ p {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 1.9em;
     color: aliceblue;
     margin-bottom: 0;
 }
@@ -59,9 +59,12 @@ p {
 @media screen and (max-width: 480px) {
     .haiku{
         font-size: 0.9em;
-        top: 75%;
+        top: 78%;
     }
     .title{
-        top: 20%;
+        top: 30%;
+        left: 55%;
+        font-size: 1.6em;
+        margin-top: 2em;
     }
   }
