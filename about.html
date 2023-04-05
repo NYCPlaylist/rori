@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RORI - About</title>
+    <link rel="stylesheet" type="text/css" href="about.css" />
+</head>
+<body>
+    <div class="postcard_contents">
+        <div class="postcard_about">
+            <p>Roots of Roosevelt Island</p>
+        </div>
+        <div class="vl"></div>
+        <div class="postcard_mail">
+            <span>spill@rori.nyc</span>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="./index.html"> front &#8594;</a>
+    </div>
+
+    <script>
+        const email = document.querySelector("span");
+
+        email.onclick = function() {
+        document.execCommand("copy");
+        }
+
+        email.addEventListener("copy", function(event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+            event.clipboardData.setData("text/plain", email.textContent);
+            console.log(event.clipboardData.getData("text"))
+        }
+        });
+    </script>
+</body>
+</html>

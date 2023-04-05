@@ -1,0 +1,76 @@
+body{
+    background-image: url('./assets/postcard_back.png');
+    background-color: aliceblue;
+    background-position: center;
+    background-attachment: fixed;
+    user-select: none;
+    background-size: cover;
+}
+@font-face {
+    font-family: TangerineBold;
+    src: url('/assets/Tangerine/Tangerine-Bold.ttf');
+}
+@font-face {
+    font-family: TangerineRegular;
+    src: url('/assets/Tangerine/Tangerine-Regular.ttf');
+}
+
+.back{
+    position: absolute;
+    top: 87%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.4em;
+    color: aliceblue;
+}
+.back a {
+    text-decoration: none;
+    color: black;
+}
+.postcard_contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.vl {
+    border-left: 6px solid black;
+    height: 300px;
+  }
+.postcard_about, .postcard_mail{
+    padding: 2em 
+}
+.postcard_about p{
+    font-family: TangerineBold;
+    text-align: center;
+    font-size: 1.4em;
+}
+.postcard_mail{
+    user-select: all;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 0.4;
+    font-weight: 600;
+}
+.postcard_mail span::selection{
+    color: #bf505b;
+}
+
+@media screen and (max-width: 480px) {
+    .vl{
+        display: none;
+    }
+    .postcard_contents{
+        flex-direction: column;
+    }
+    body{
+        background-position: right;
+    }
+  }

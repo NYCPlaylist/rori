@@ -38,14 +38,28 @@ p {
     top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    text-align: center;
     font-size: 1.4em;
+    color: aliceblue;
+}
+.back{
+    position: absolute;
+    top: 87%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.4em;
+    color: aliceblue;
+}
+.back a {
+    text-decoration: none;
     color: aliceblue;
 }
 
 @media screen and (max-width: 480px) {
     .haiku{
         font-size: 0.9em;
+        top: 75%;
     }
     .title{
         top: 20%;
